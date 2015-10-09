@@ -4,6 +4,6 @@ class LearnController < ApplicationController
   
   def create
     Talk.create(ask: params[:ask],answer: params[:answer])
-    redirect_to :root
+    redirect_to '/learn'
   end
 end
