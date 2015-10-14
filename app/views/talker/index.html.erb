@@ -12,7 +12,7 @@
           </div>
           <div class="balloon">
             <div class="tail"></div>
-            <div class="text"><%=p.chat_content%></div>
+            <div class="text"><%=URI.decode(p.chat_content)%></div>
           </div>
         </div>
       <% else %>
@@ -34,3 +34,4 @@
     <input type="submit" value="전송">
   <% end %>
 </div>
+<h3><br><br><br><br><br>음식이름 앞에 #을 붙여보세요!</h3>
